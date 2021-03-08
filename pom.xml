@@ -2,11 +2,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.rumoel.rumoel</groupId>
 
+	<groupId>com.github.rumoel.rumoel</groupId>
 	<artifactId>rumoel-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
 	<name>RUMO-ROOT</name>
 
 
@@ -71,6 +72,8 @@
 		<apache-common-io.version>2.6</apache-common-io.version>
 		<org.apache.commons.commons-dbcp2.version>2.8.0</org.apache.commons.commons-dbcp2.version>
 		<org.apache.commons.commons-lang3.version>3.11</org.apache.commons.commons-lang3.version>
+
+		<springboot.version>2.4.3</springboot.version>
 
 	</properties>
 
