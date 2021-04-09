@@ -67,7 +67,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	<!-- -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -94,8 +93,22 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	<!-- -->
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/RumoEL/rumo-parent</url>
+		</repository>
+	</distributionManagement>
 	<build>
+		<extensions>
+			<!-- Enabling the use of SSH -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh-external</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
 		<!-- -->
 		<pluginManagement>
 			<plugins>
